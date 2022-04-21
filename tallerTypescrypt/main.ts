@@ -9,6 +9,7 @@ promedioElem.innerHTML = `${promedio(series)}`;
 
 function renderSeriesTable(pSeries:Serie[])
 {
+    console.log('entre a render');
     pSeries.forEach(s =>{
         let trElement = document.createElement("tr");
         trElement.innerHTML = `<td>${s.id}</td>
@@ -21,6 +22,7 @@ function renderSeriesTable(pSeries:Serie[])
 
 
 function promedio(pSeries:Serie[]):number{
+    console.log('entre a promedio');
     let contador:number = 0;
     let suma:number = 0;
     pSeries.forEach(s =>{
